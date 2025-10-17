@@ -17,7 +17,9 @@ function App() {
         const res = await fetch(
           "https://jsonplaceholder.typicode.com/todos" 
         );
+        console.log(res);
         const json = await res.json();
+        console.log(json);
         setData(json);
       } catch (e) {
         console.error(e);
